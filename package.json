@@ -1,0 +1,19 @@
+{
+  "name": "single-file-uploader",
+  "version": "0.0.2",
+  "description": "Upload a single file to express multer server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karimmakhloufi/single-file-uploader.git"
+  },
+  "author": "Karim Makhloufi, Thomas Brouillet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karimmakhloufi/single-file-uploader/issues"
+  },
+  "homepage": "https://github.com/karimmakhloufi/single-file-uploader#readme"
+}
