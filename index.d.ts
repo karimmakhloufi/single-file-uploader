@@ -1,9 +1,12 @@
 interface SingleUploaderConfig {
-    formDataName: String,
-    localUri: String,
-    filetype: String,
-    filename: String,
-    distantUrl: String
+  formDataName: String;
+  localUri: String;
+  filetype: String;
+  filename: String;
+  distantUrl: String;
+  token: String;
 }
-declare function SingleFileUploader(config: SingleUploaderConfig): Promise<boolean>;
+declare function SingleFileUploader(
+  config: SingleUploaderConfig
+): Promise<boolean>;
 export = SingleFileUploader;
