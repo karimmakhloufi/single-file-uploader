@@ -5,6 +5,7 @@ async function SingleFileUploader({
   filename,
   distantUrl,
   token,
+  expectedStatusCode,
 }) {
   return new Promise(async function (resolve, reject) {
     const data = new FormData();
@@ -17,12 +18,12 @@ async function SingleFileUploader({
     serverResponse = await fetch(distantUrl, {
       method: "POST",
       headers: {
-        "Content-type": "application/json",
+        "Content-type": "multipart/form-data",
         Authorization: `Bearer ${token}`,
       },
       body: data,
     });
-    if (serverResponse.status === 201) {
+    if (serverResponse.status === expectedStatusCode) {
       resolve();
     } else {
       reject();
