@@ -5,7 +5,7 @@ interface SingleUploaderConfig {
   filename: String;
   distantUrl: String;
   token: String;
-  expectedStatusCode: String;
+  expectedStatusCode: number;
 }
 declare function SingleFileUploader(
   config: SingleUploaderConfig

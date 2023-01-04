@@ -23,7 +23,7 @@ async function SingleFileUploader({
       },
       body: data,
     });
-    if (serverResponse.status === expectedStatusCode) {
+    if (serverResponse.status == expectedStatusCode) {
       resolve();
     } else {
       reject();
